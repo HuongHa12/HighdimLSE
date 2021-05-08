@@ -22,7 +22,7 @@ If you find our code useful, please kindly cite our paper.
 
 ## Test Cases
 
-ExpHLSE and ImpHLSE have been evaluated on 3 synthetic benchmark functions: Levy10, Ackley10, Alpine10 and three real-world experiments: Material Design, Protein Selection, and Algorithmic Assurance, using various level set thresholds. More details about the experiment setting can be found in the paper. The codes to implement these synthetic functions and ML models can be found in the scripts ```functions.py``` and ```functions_ml_model.py```.
+ExpHLSE and ImpHLSE have been evaluated on 3 synthetic benchmark functions: Levy10, Ackley10, Alpine10 and three real-world experiments: Material Design, Protein Selection, and Algorithmic Assurance, using various level set thresholds. More details about the experiment setting can be found in the paper. The codes to implement these synthetic functions and ML models can be found in the scripts ```functions.py``` and ```functions_ml_model.py```. Note regarding the real-world experiments, we can only provide the Protein Selection and Algorithmic Assurance tasks; for Material Design, since the data is confidential so we can't provide in this Github.
 
 ## Usage
 The folder has four main scripts to run the explicit and implict algorithms for synthetic and real-world experiments:
