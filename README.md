@@ -31,7 +31,7 @@ The folder has four main scripts to run the explicit and implict algorithms for 
 3) ```LSEImpwithBNN.py```: Script to run the proposed implicit algorithm (ImpHLSE) on synthetic functions
 4) ```LSEImpwithBNN_ML.py```: Script to run the proposed implicit algorithm (ImpHLSE) aon real-world experiments
 
-# A - TO RUN THE EXPLICIT ALGORITHMS
+### A - TO RUN THE EXPLICIT ALGORITHMS
 To get the results for a FUNCTION with the explicit level set threshold at the index H_IDX, for experiment N_EXP with batch size BS, use the following command:
 python LSEwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
 OR python LSEwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
