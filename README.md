@@ -36,30 +36,30 @@ To get the results for a FUNCTION with the explicit level set threshold at the i
 python LSEwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
 OR python LSEwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
 
-Possible METHODs: ExpHLSE
-Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
-Possible H_IDX: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 corresponding to the cases of the super_level set being [0, 1, 5, 10, 20, 100, 99, 95, 90, 80]% of the function domain (in the main paper, H_IDX is set as 4)
-Possible N_EXP: 0, 1, 2, .... (in the main paper, we show the results of 3 experiments with N_EXP = 0, 1, 2)
-Possible BS: 1, 2, .... (in the main paper, for ExpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
+- Possible METHODs: ExpHLSE
+- Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
+- Possible H_IDX: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 corresponding to the cases of the super_level set being [0, 1, 5, 10, 20, 100, 99, 95, 90, 80]% of the function domain (in the main paper, H_IDX is set as 4)
+- Possible N_EXP: 0, 1, 2, .... (in the main paper, we show the results of 3 experiments with N_EXP = 0, 1, 2)
+- Possible BS: 1, 2, .... (in the main paper, for ExpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
 
 Examples (this will reproduce the results in the paper for Ackley10, and Protein problem -- with experiment 0):
-python LSEwithBNN.py -func_name Ackley10 -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 100
-python LSEwithBNN.py -func_name Protein_wl -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 200
+- python LSEwithBNN.py -func_name Ackley10 -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 100
+- python LSEwithBNN.py -func_name Protein_wl -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 200
 
-B ----- TO RUN THE IMPLICIT ALGORITHMS
+### B - TO RUN THE IMPLICIT ALGORITHMS
 To get the results for a FUNCTION with the implicit level set threshold at the H_IDX, for experiment N_EXP with batch size BS, use the following command:
 python LSEImpwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
 OR python LSEImpwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
 
-Possible METHODs: ImpHLSE
-Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
-Possible H_IDX: Any number from 0 to 1 (in the main paper, we set H_IDX such that the level is similiar to the corresponding explicit LSE problem, so our choices of H_IDX are as follows: Ackley10: 0.9689, Levy10: 0.35, Alpine10: 0.5, DeepPerf_hsmgp: 0.091, DeepPerf_hipacc: 0.109, Protein_wl: 0.904)
-Possible N_EXP: 0, 1, 2, .... (in the main paper, we show the results of 3 experiments with N_EXP = 0, 1, 2)
-Possible BS: 1, 2, .... (in the main paper, for ImpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
+- Possible METHODs: ImpHLSE
+- Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
+- Possible H_IDX: Any number from 0 to 1 (in the main paper, we set H_IDX such that the level is similiar to the corresponding explicit LSE problem, so our choices of H_IDX are as follows: Ackley10: 0.9689, Levy10: 0.35, Alpine10: 0.5, DeepPerf_hsmgp: 0.091, DeepPerf_hipacc: 0.109, Protein_wl: 0.904)
+- Possible N_EXP: 0, 1, 2, .... (in the main paper, we show the results of 3 experiments with N_EXP = 0, 1, 2)
+- Possible BS: 1, 2, .... (in the main paper, for ImpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
 
 Examples:
-python LSEImpwithBNN.py -func_name Ackley10 -h_index 0.9689 -n_exp 0 -acq_model ImpHLSE -batch_size 100
-python LSEImpwithBNN_ML.py -func_name Protein_wl -h_index 0.904 -n_exp 0 -acq_model ImpHLSE -batch_size 200
+- python LSEImpwithBNN.py -func_name Ackley10 -h_index 0.9689 -n_exp 0 -acq_model ImpHLSE -batch_size 100
+- python LSEImpwithBNN_ML.py -func_name Protein_wl -h_index 0.904 -n_exp 0 -acq_model ImpHLSE -batch_size 200
 
 
 
