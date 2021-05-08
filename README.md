@@ -33,8 +33,8 @@ The folder has four main scripts to run the explicit and implict algorithms for 
 
 ### A - TO RUN THE EXPLICIT ALGORITHMS
 To get the results for a FUNCTION with the explicit level set threshold at the index H_IDX, for experiment N_EXP with batch size BS, use the following command:
-python LSEwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
-OR python LSEwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
+```python LSEwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS```
+OR ```python LSEwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS```
 
 - Possible METHODs: ExpHLSE
 - Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
@@ -48,8 +48,8 @@ Examples (this will reproduce the results in the paper for Ackley10, and Protein
 
 ### B - TO RUN THE IMPLICIT ALGORITHMS
 To get the results for a FUNCTION with the implicit level set threshold at the H_IDX, for experiment N_EXP with batch size BS, use the following command:
-python LSEImpwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
-OR python LSEImpwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS
+```python LSEImpwithBNN.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS```
+OR ```python LSEImpwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_model METHOD -batch_size BS```
 
 - Possible METHODs: ImpHLSE
 - Possible FUNCTIONs: Levy10, Ackley10, Alpine10, Protein_wl, DeepPerf_hsmgp_0, DeepPerf_hipacc_0
