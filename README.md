@@ -61,5 +61,6 @@ Examples:
 - ```python LSEImpwithBNN.py -func_name Ackley10 -h_index 0.9689 -n_exp 0 -acq_model ImpHLSE -batch_size 100```
 - ```python LSEImpwithBNN_ML.py -func_name Protein_wl -h_index 0.904 -n_exp 0 -acq_model ImpHLSE -batch_size 200```
 
-
+### RESULTS
+We currently store some sample results of Ackley10, Protein_wl in the results folder (for experiment 0).
 
