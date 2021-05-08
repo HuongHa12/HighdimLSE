@@ -1,0 +1,15 @@
+{
+  "num_layer": 3,
+  "num_train_examples": 200,
+  "batch_size": 32,
+  "method": "dropout",
+  "architecture": "mlp",
+  "mlp_layer_sizes": 173,
+  "num_examples_for_predict": 55,
+  "predictions_per_example": 200,
+  "dataset_name": "Protein_wl",
+  "input_size": 20,
+  "learning_rate": 0.0015045673696247523,
+  "dropout_rate": 0.07910504647909829,
+  "train_epochs": 1000
+}

@@ -1,0 +1,15 @@
+{
+  "num_layer": 1,
+  "num_train_examples": 21,
+  "batch_size": 6,
+  "method": "dropout",
+  "architecture": "mlp",
+  "mlp_layer_sizes": 512,
+  "num_examples_for_predict": 55,
+  "predictions_per_example": 200,
+  "dataset_name": "Ackley10",
+  "input_size": 10,
+  "learning_rate": 0.013737997609915948,
+  "dropout_rate": 0.19220036103865887,
+  "train_epochs": 1000
+}
