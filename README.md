@@ -43,8 +43,8 @@ OR python LSEwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -acq_
 - Possible BS: 1, 2, .... (in the main paper, for ExpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
 
 Examples (this will reproduce the results in the paper for Ackley10, and Protein problem -- with experiment 0):
-- python LSEwithBNN.py -func_name Ackley10 -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 100
-- python LSEwithBNN.py -func_name Protein_wl -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 200
+- ```python LSEwithBNN.py -func_name Ackley10 -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 100```
+- ```python LSEwithBNN.py -func_name Protein_wl -h_index 4 -n_exp 0 -acq_model ExpHLSE -batch_size 200```
 
 ### B - TO RUN THE IMPLICIT ALGORITHMS
 To get the results for a FUNCTION with the implicit level set threshold at the H_IDX, for experiment N_EXP with batch size BS, use the following command:
@@ -58,8 +58,8 @@ OR python LSEImpwithBNN_ML.py -func_name FUNCTION -h_index H_IDX -n_exp N_EXP -a
 - Possible BS: 1, 2, .... (in the main paper, for ImpHLSE and gp_TruVar, we set BS=10d where d is the dimension of the input)
 
 Examples:
-- python LSEImpwithBNN.py -func_name Ackley10 -h_index 0.9689 -n_exp 0 -acq_model ImpHLSE -batch_size 100
-- python LSEImpwithBNN_ML.py -func_name Protein_wl -h_index 0.904 -n_exp 0 -acq_model ImpHLSE -batch_size 200
+- ```python LSEImpwithBNN.py -func_name Ackley10 -h_index 0.9689 -n_exp 0 -acq_model ImpHLSE -batch_size 100```
+- ```python LSEImpwithBNN_ML.py -func_name Protein_wl -h_index 0.904 -n_exp 0 -acq_model ImpHLSE -batch_size 200```
 
 
 
