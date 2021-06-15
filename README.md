@@ -3,7 +3,7 @@
 This repository contains the code for the method ExpHLSE and ImpHLSE proposed in the paper 'High Dimensional Level Set Estimation with Bayesian Neural Network', AAAI'2021, Ha et al. These are the two methods that solve the high-dimensional Level Set Estimation (LSE) problem via Bayesian Neural Network (BNN).
 
 ## Citing ExpHLSE and ImpHLSE
-If you find our code useful, please kindly cite our paper. 
+If you find our code useful, please kindly cite our paper:
 
 ```
 @inproceedings{Ha2021,
@@ -26,10 +26,10 @@ ExpHLSE and ImpHLSE have been evaluated on 3 synthetic benchmark functions: Levy
 
 ## Usage
 The folder has four main scripts to run the explicit and implict algorithms for synthetic and real-world experiments:
-1) ```LSEwithBNN.py```: Script to run the proposed explicit algorithm (ExpHLSE) on synthetic functions
-2) ```LSEwithBNN_ML.py```: Script to run the proposed explicit algorithm (ExpHLSE) on real-world experiments
-3) ```LSEImpwithBNN.py```: Script to run the proposed implicit algorithm (ImpHLSE) on synthetic functions
-4) ```LSEImpwithBNN_ML.py```: Script to run the proposed implicit algorithm (ImpHLSE) aon real-world experiments
+1) ```LSEwithBNN.py```: Script to run the proposed explicit algorithm (ExpHLSE) on synthetic functions;
+2) ```LSEwithBNN_ML.py```: Script to run the proposed explicit algorithm (ExpHLSE) on real-world experiments;
+3) ```LSEImpwithBNN.py```: Script to run the proposed implicit algorithm (ImpHLSE) on synthetic functions;
+4) ```LSEImpwithBNN_ML.py```: Script to run the proposed implicit algorithm (ImpHLSE) aon real-world experiments.
 
 ### A - TO RUN THE EXPLICIT ALGORITHMS
 To get the results for a FUNCTION with the explicit level set threshold at the index H_IDX, for experiment N_EXP with batch size BS, use the following command:
